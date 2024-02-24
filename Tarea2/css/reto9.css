@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background-color: white;
+}
+
+
+header {
+    color: #fff;
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding: 1px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2e2e2;
+    box-shadow: black 0px 0px 5px;
+}
+
+
+header a {
+color: black;
+text-decoration: none;
+margin: 20px 15px 20px 20px; /* Espaciado entre las etiquetas <a> */
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.espacios {
+    margin: 60px;
+    padding: 20px;
+    border-color: black;
+}
+
+.espacios1 {
+    margin: 60px;
+    padding: 15px;
+    border-color: black;
+    border-width: 10px;
+    box-shadow: #4584ae 0px 0px 10px;
+}
+
+.espacios2 {
+    border-color: black;
+    border-width: 10px;
+    box-shadow: #4584ae 0px 0px 10px; 
+}
+
+h1 {
+margin: 0px;
+font-size: 40px;
+color: #003f6c;
+margin-bottom: 20px;
+}
+
+hr {
+    color: #4584ae;
+}
+
+.img1 {
+    width: 50%;
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.boton1 {
+    background-color: #155e90;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.boton2 {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.container {
+    margin: 0px; /* Ajusta el valor negativo para eliminar los espacios entre las columnas */
+    padding: 20px 10px 10px 20px;
+    
+}
+
+footer {
+    color: #fff;
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e2e2;
+    box-shadow: black 0px 0px 10px;
+}
+
+.columnas {
+    columns: 5; /* Número de columnas */
+    column-gap: 20px; /* Espaciado entre columnas */
+    padding: 20px;
+}
+
+.columnas a {
+display: block;
+margin-bottom: 10px; /* Espaciado entre enlaces */
+color: #333;
+text-decoration: none;
+}
+
+.fondo {
+    background-color: #e2e2e2;
+    padding: 20px;
+    margin: 0px;
+}

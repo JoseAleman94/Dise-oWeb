@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background-color: #fffbf4;
+}
+
+
+header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    
+}
+
+
+h1 {
+margin: 0px;
+font-size: 60px;
+}
+
+.icono {
+    position: relative;
+    display: inline-block;
+    font-size: 24px; /* Ajusta el tamaño del icono según tus necesidades */
+    color: blue;
+}
+
+.icono::before,
+.icono::after {
+content: '';
+position: absolute;
+height: 2px; /* Ajusta el grosor de las líneas según tus necesidades */
+width: 20px; /* Ajusta la longitud de las líneas según tus necesidades */
+background-color: red; /* Ajusta el color de las líneas según tus necesidades */
+
+}
+
+.icono::before {
+top: 50%;
+left: -25px; /* Ajusta la posición de la línea izquierda según tus necesidades */
+transform: translateY(-50%);
+}
+
+.icono::after {
+top: 50%;
+right: -25px; /* Ajusta la posición de la línea derecha según tus necesidades */
+transform: translateY(-50%);
+}
+
+.botones {
+    background-color: red;
+    border-color: black;
+}
+
+.fondo1 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: grey 0px 10px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.espacio {
+    margin: 0;
+}
+
+.espacio2 {
+    margin: 20px;
+}
+
+.boton1 {
+    background-color: #155e90;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+}

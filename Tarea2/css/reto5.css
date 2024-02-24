@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background-color: #fffbf4;
+}
+
+
+header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cac2a5;
+    box-shadow: grey 0px 0px 10px;
+}
+
+
+h1 {
+margin: 0px;
+font-size: 60px;
+}
+
+.fondo1 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cac2a5;
+    box-shadow: grey 0px 10px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.boton1 {
+    background-color: #155e90;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    margin: -10px; /* Ajusta el valor negativo para eliminar los espacios entre las columnas */
+    padding: 0px 0px 0px 0px;
+}
+
+.column {
+padding: 0px;
+color: #fff;
+text-align: left;
+margin: 0px 0px 0px 0px; /* Ajusta el margen interno de las columnas según tus necesidades */
+ /* Incluye el padding y el borde en el ancho y alto del elemento */
+}
+
+
+
+.container-derecha {
+    background-color: red;
+    padding: 10px 0px 10px 20px;
+    margin: 0px 0px 0px 20px;
+}
+
+.container-centro {
+    background-color: green;
+    padding: 10px 0px 10px 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+.container-izquierda {
+    background-color: orange;
+    padding: 10px 0px 10px 20px;
+    margin: 0px 20px 0px 0px;
+}
