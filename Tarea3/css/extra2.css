@@ -1,0 +1,53 @@
+/* Para pantallas pequeñas como teléfonos */
+@media (max-width: 575.98px) {
+    .titulo {
+        font-size: 20px;
+    }
+
+    header {
+        width: 40px;
+    }
+    
+    .banner-section .col-lg-6 {
+        text-align: center;
+    }
+    .banner-section .col-lg-6 p {
+        font-size: 14px;
+    }
+    .banner-section .container-fluid .col-lg-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Para pantallas medianas como tabletas */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .titulo {
+        font-size: 24px;
+    }
+    .banner-section .col-lg-6 {
+        text-align: left;
+    }
+    .banner-section .col-lg-6 p {
+        font-size: 16px;
+    }
+    .banner-section .container-fluid .col-lg-4 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Para pantallas grandes como computadoras de escritorio */
+@media (min-width: 992px) {
+    .titulo {
+        font-size: 28px;
+    }
+    .banner-section .col-lg-6 {
+        text-align: left;
+    }
+    .banner-section .col-lg-6 p {
+        font-size: 18px;
+    }
+    .banner-section .container-fluid .col-lg-4 {
+        margin-bottom: 0;
+    }
+}
