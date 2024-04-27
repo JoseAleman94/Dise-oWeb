@@ -1,0 +1,597 @@
+body{
+	font-family: 'Playfair Display', serif;
+    line-height: 26px;
+	overflow-x: hidden;
+	margin: 0;   
+    color: #fff; 
+    background-color: #fff;
+   }
+
+
+/* clases del video de fondo*/
+header{
+	/*altura fija vertical*/
+	height: 100vh 100vh;
+    font-family: 'Playfair Display', serif;
+
+}
+header h1 {
+	text-shadow: 0 0 30px #fff;
+	letter-spacing: 5px;
+	font-size: 60px;	
+    color: #1b3e40;
+
+}	
+header p{	
+	font-size: 30px;
+	border-radius: 24px;
+    color: #1b3e40;
+    font-family: 'Playfair Display', serif;
+
+	/*profundidad*/
+	/*usar la web para cambiar colores de la profundidad: http://hex2rgba.devoth.com/*/
+	/* box-shadow: inset 0 0 0 1000px rgba(38, 176, 207, 0.2);*/
+}	
+
+.imagenNav {
+	height:50px;
+	width:50px;
+}
+
+.imagenNav1 {
+	height:50px;
+	width:50px;
+	align-items: end;
+}
+
+.imagenNav2 {
+	height:50px;
+	width:50px;
+	align-items: start;
+}
+
+.img3 {
+    height: 60px;
+    width: 60px;
+}
+
+.container-fluid1{
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+.container-fluid2{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.container-fluid3{
+	padding-top: 120px;
+	padding-bottom: 140px;
+}
+.container-fluid4{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.container-fluid5{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.container-fluid6{
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+.container-fluid7{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+.fondo1{
+	background-color:#2c3e50;
+}
+.fondo2{
+	background-color:#18bc9c;
+}
+.fondo3{
+	background-color:#ffffff;
+}
+.fondo4{
+		box-shadow: inset 0 0 0 1000px rgba(187, 50, 242, 0.2);
+}
+.fondo5{
+	background-color:#ffffff;
+}
+.fondo6{
+	background-color:#2c3e50;
+}
+.fondo7{
+	background-color:#233140;
+}
+.cursor{
+	cursor: pointer;
+}
+
+.fondo8 {
+	/*background-image: #dcd5bc;*/
+	background-image: url("../imagenes/nuevoFondo-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*  crear animacion keyframe poniendole un nombre (a) */
+    animation: a 3s ease infinite alternate;
+}
+
+.fondo9 {
+	background-color: #8dafa1;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	color: #125860;
+}
+
+h3 {
+	font-family: 'Playfair Display', serif;
+	color: #a0616d;
+}
+
+p {
+	font-family: 'Playfair Display', serif;
+	color: #0c301b;
+}
+
+/*** CLIP PATH ***/
+
+/* formas */
+
+.forma1 {
+    /* cada valor es X Y */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.forma2 {
+    clip-path: circle();
+}
+
+/* divisores */
+
+.portadaHeader {
+    color: #fff;
+    background-image: url("../imagenes/belleza-min.jpg");
+    clip-path: inset(5px round 24px);
+    height: calc(150vh 150vh);
+    background-position: center;
+    background-color: #e4e4e4;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    /* el 57% permite controlar la posicion del doblaje */
+}
+
+.cpPie {
+    color: #fff;
+    clip-path: inset(5px round 24px);
+    height: calc(130vh 130vh);
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-position: center;
+    background-color: grey;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    /* el 57% permite controlar la posicion del doblaje */
+}
+
+
+@media (max-width: 576px) {
+	header p{
+		text-align: justify;
+		font-size:16px;
+	}
+}
+
+/*********************  MENU NAV ******************************/
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    color: #000;
+	font-family: 'Playfair Display', serif;
+    font-size: 14px;
+}
+
+.optmenu {
+	font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    transition: all 1s solid;
+    color: white;
+}
+
+.optmenu:hover {
+    color: white;
+    background-color: rgba(40,147,157,255);
+    transition: all 1s solid;
+}
+
+.optmenu:active {
+    background-color: brown;
+}
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+
+.navbar-toggler {
+    background-color: #d6dbe3;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.navbar-toggler:hover {
+    background-color: #d6dbe3;
+}
+
+.custom-toggler .navbar-toggler {
+    background-color: #fff;
+}
+
+/* PERSONALIZACION LINEAS DEL MENU HAMBURGUESA */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(40,147,157,255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}         
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 0, 0)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}   
+
+/* CARDS */
+
+
+/*======================
+   02. Basic css
+========================*/
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+
+ol,
+ul {
+	list-style: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+.card_wrapper {
+	/* background: linear-gradient(180deg, #23273A 46.35%, #FA4A6F 119.01%);*/
+	background-image: url("../imagenes/nuevoFondo-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	background-color: #8dafa1;
+	width: 100%;
+	height: 100vh 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.head_text {
+	font-family: 'Playfair Display', serif;
+	font-size: 45px;
+    color: #ffffff;
+}
+
+.head_para {
+	margin-top: 15px;
+    color: #ffffff;
+}
+
+.card_box {
+	background: #ffffff;
+	border-radius: 40px;
+    margin-top: 40px ;
+    margin-bottom: 40px ;
+    transition: .3s;
+}
+
+.card_box:hover {
+	box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.05);
+	transform: translateY(-10px);
+}
+
+.card_text {
+	padding: 30px 20px 25px 20px;
+}
+
+.card_text h4 {
+	font-size: 18px;
+	font-family: bromega-Bold;
+	color: #FA4A6F;
+}
+
+.card_text p {
+	font-size: 14px;
+	line-height: 150%;
+	margin-top: 10px;
+	color: #23273A;
+}
+
+.slider_carousel .owl-nav {
+	position: absolute;
+	top: 20%;
+	width: 100%;
+}
+
+.slider_carousel .owl-prev, .slider_carousel .owl-next {
+	width: 40px;
+	height: 40px;
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+}
+
+.slider_carousel .owl-next {
+    right: -50px;
+}
+
+.slider_carousel .owl-prev {
+    left: -50px;
+}
+
+a {
+    cursor: pointer;
+}
+
+/*ICONO WHATSAPP*/
+
+.whatsapp {
+    position:static;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;    
+    line-height: 20px;    
+    font-size: 50px;
+    text-decoration: none;
+    transition: all 1s ease-in;
+}
+
+.whatsapp:hover {
+    background-color: #25d366 !important;
+
+}
+
+.iconos3 {
+    height: 250px;
+    width: 250px;
+}
+
+.titulos1 {
+	color: #1d8989;
+}
+
+.efecto1 img {
+    transition: all ease-in-out 0.5s;
+
+}
+.efecto1:hover img {
+    transform: scale(1.1);
+}
+/*======================
+   PAGINA 1
+========================*/
+
+   .banner1 {
+    background-image: url("../imagenes/primerbotonimagen-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*  crear animacion keyframe poniendole un nombre (a) */
+    animation: a 3s ease infinite alternate;
+}
+
+@keyframes a {
+    0% {
+        /* posicion x y */
+        background-position: 0 0;
+    }
+    100% {
+        background-position:0 0;
+    }
+}
+
+.border1 {
+    border-radius: 10% 10px;
+    border-color: #2c3e50;
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.imagenIndex {
+	border-radius: 50px;
+	margin-top: 45px;
+	width: 200px;
+	height: 100px;
+}
+
+
+.banner3 {
+    background-image: url("../imagenes/frutas-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*  crear animacion keyframe poniendole un nombre (a) */
+    animation: y 3s ease infinite alternate;
+}
+
+@keyframes y {
+	0% {
+        /* posicion x y */
+        background-position: 10px 0;
+    }
+    100% {
+        background-position:0 10px;
+    }
+	
+}
+
+.banner4 {
+    background-image: url("../imagenes/lunch-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*  crear animacion keyframe poniendole un nombre (a) */
+    animation: w 3s ease infinite alternate;
+}
+
+@keyframes w {
+	0% {
+        /* posicion x y */
+        background-position: 10px 0;
+    }
+    100% {
+        background-position:0 10px;
+    }
+	
+}
+
+.banner5 {
+    background-image: url("../imagenes/banner5\ \(1\)-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*  crear animacion keyframe poniendole un nombre (a) */
+    animation: w 3s ease infinite alternate;
+    border-radius: 10px;
+}
+
+.banner6 {
+    background-image: url("../imagenes/fondoGris2-min.jpg");
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-position: center;
+    border-radius: 20px;
+    border-color: #000;
+    border-style:solid;
+        /*  crear animacion keyframe poniendole un nombre (a) */
+    animation: a 3s ease infinite alternate;
+}
+
+
+/* propiedades de la caja del tabulador */
+
+.tab {
+    overflow: hidden;
+    border: 2px solid #ccc;
+    background-color: #d9b488;
+    /*color de la barra principal del tabulador*/
+    /*background-color: #f1f1f1;*/
+    font-family: 'Playfair Display', serif;
+
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.tamano {
+    font-size: 34px;
+
+}
+
+
+/* controla propiedades de los TABS */
+
+.tab button {
+    background-color: inherit;
+    float:center;
+    color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+
+/* controla el color sobre los TABS */
+
+.tab button:hover {
+    background-color: #28555f;
+    color: #fff;
+}
+
+
+/* controla el color activo de los TABS */
+
+.tab button.active {
+    background-color: #a0616d;
+    color: #fff;
+}
+
+
+/* controla el contenido de cada pestaña tab */
+
+.tabcontent {
+    display: none;
+    padding: 60px 120px;
+    border: 2px solid #28555f;
+    border-top: none;
+    background: #d1c9b0;
+    
+}
+
+
+.tabcontent {
+    animation: efect1 2s;
+
+}
+
+@keyframes efect1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
